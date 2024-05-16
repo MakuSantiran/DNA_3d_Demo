@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Box with Shadows</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+        }
+        .makuSignature {
+            position: absolute;
+            bottom: 1vw;
+            right: 1vw;
+            color: #ffffff;
+            user-select: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .CrossAirContainer {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff00;
+            pointer-events: none;
+        }
+
+        .absolute-center {
+            background-color: #a99292d3;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Translate the element by half of its width and height */
+        }
+
+        .crossair{
+            background-color: #ffffff;
+            width: 0.2vw;
+            height: 0.2vw;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="CrossAirContainer">
+        <div class="absolute-center">
+            <div class="crossair"></div>
+        </div>
+    </div>
+    <div class="makuSignature">
+        DNA test, TOO excessiVe
+    </div>
+
+    <script src="./files/src/AnimeJs/anime.min.js"></script>
+    <script src="./files/src/ThreeJs/threeJs.js"></script>
+    <script src="./files/src/Pizzicato/Pizzicato.js"></script>
+    <script src="./files/src/main.js"></script>
+</body>
+</html>
